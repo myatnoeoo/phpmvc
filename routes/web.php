@@ -10,6 +10,8 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('POST', '/home/store', 'homeController::store');
     $r->addRoute('GET', '/test', 'testController::index');
     $r->addRoute('GET', '/welcome', 'welcomeController::index');
+    $r->addRoute('GET', '/csrf', 'csrfController::index');
+    $r->addRoute('POST', '/csrf/test', 'csrfController::store');
 });
 
 
