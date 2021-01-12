@@ -9,13 +9,13 @@
 	//create CSRF token
 	$csrf = hash_hmac('sha256', 'this is some string: create.php', $_SESSION['key']);
 
-	//validate token
-	// if (isset($_POST['submit'])) {
-	// 	if (hash_equals($csrf, $_POST['csrf'])) {
-	// 		echo "Your name is: " . $_POST['username'];
-	// 	} else
-	// 		echo 'CSRF Token Failed!';
-	// }
+	// validate token
+	if (isset($_POST['submit'])) {
+		if (hash_equals($csrf, $_POST['csrf'])) {
+			echo "Your name is: ";
+		} else
+			echo 'CSRF Token Failed!';
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,8 +32,9 @@
 		Email :: <input type="text" name="email" placeholder="Enter your email please." > <br> <br>
 		Password :: <input type="text" name="password" placeholder="Enter your password please." > <br> <br>
 		<input type="hidden" name="csrf" value="<?php echo $csrf ?>">
-        <input type="submit">
-    </form>
+        <input type="submit" value="Save">
+    </form><br>
 
+    <button onclick="location.href='/home/index';">Back to home</button>
 </body>
 </html>

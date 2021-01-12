@@ -15,7 +15,7 @@ class homeController extends Controller{
     public static function index()
     {
         $users = UserQuery::all();
-        $view = new view('home');
+        $view = new view('home/index');
         $view->assign('users', $users);
     }
 
@@ -32,9 +32,31 @@ class homeController extends Controller{
         $view->assign('user', $user);
     }
 
+    
+    public static function edit($request)
+    {
+        $id = $request['id'];
+        $user = UserQuery::find($id);
+        $view = new view('home/edit');
+        $view->assign('user', $user);
+    }
+
+    public static function update($request)
+    {
+        $user = UserQuery::edit($request);
+        self::index();
+    }
+
     public static function store($request)
     {
         $user = UserQuery::create($request);
+        self::index();
+    }
+
+    public static function delete($request)
+    {
+        $id = $request['id'];
+        $user = UserQuery::delete($id);
         self::index();
     }
 

@@ -27,7 +27,21 @@
             return $user;
         }
 
-        public static function create($request)
+        public static function edit($request)
+        {
+            include("database.php");
+            $id = $request['id'];
+            $name = $request['name'];
+            $email = $request['email'];
+            $password = $request['password'];
+
+            $sql = "UPDATE users SET name = '$name', email = '$email', password = '$password' WHERE id = $id";
+            mysqli_query($conn, $sql);
+
+            return true;
+
+        }
+         public static function create($request)
         {
             include("database.php");
 
@@ -44,6 +58,19 @@
             mysqli_query($conn, $sql);
 
             return true;
+        }
+
+        public static function delete($id)
+        {
+            include("database.php");
+
+            $sql = mysqli_query($conn, "DELETE FROM users WHERE id = $id");
+
+            mysqli_query($conn, $sql);
+
+            return true;
+
+
         }
     }
 ?>
