@@ -44,15 +44,15 @@
          public static function create($request)
         {
             include("database.php");
-
             $name = $request['name'];
             $email = $request['email'];
-            $password = $request['password'];
+            $orig_pass = $request['password'];
+            $hash_pass = md5($orig_pass);
 
             $sql = "INSERT INTO users (
                 name, email, password
             ) VALUES (
-                '$name', '$email', '$password'
+                '$name', '$email', '$hash_pass'
             )";
 
             mysqli_query($conn, $sql);
