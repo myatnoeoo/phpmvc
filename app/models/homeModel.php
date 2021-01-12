@@ -10,25 +10,5 @@ class homeModel extends Model{
         'name', 'email', 'password','userimage'
     ];
 
-    // public static function query()
-    // {
-    //     $data = array(
-    //         'name' => 'DAT',
-    //         'email' => 'test@gmail.com',
-    //         'password' => 'company'
-    //     );
-
-
-        // $list = homeModel::get();
-        // var_dump($list);
-
-        // $find = homeModel::find(1);
-    
-
-        // homeModel::create($data);
-
-
-        // return (object) $data;
-    // }
 }
 ?>

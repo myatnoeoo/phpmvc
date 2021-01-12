@@ -8,6 +8,7 @@
 <body>
     
     <p>Name : <?php echo $user['name'] ?></p>
+    <p>Email : <?php echo $user['email'] ?></p>
 
 </body>
 </html>

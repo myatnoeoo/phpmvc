@@ -12,7 +12,7 @@
 	//validate token
 	if (isset($_POST['submit'])) {
 		if (hash_equals($csrf, $_POST['csrf'])) {
-			echo "Your name is: " . $_POST['username'];
+			echo "Your name is " . " [ " . $_POST['name'] . " ] " . " and your email is ". " [ " . $_POST['email'] . " ] " . " and your password is ". " [ " . $_POST['password']  . " ] " . "." ;
 		} else
 			echo 'CSRF Token Failed!';
 	}
@@ -23,9 +23,11 @@
 	</head>
 	<body>
 		<form method="POST" action="/csrf/test">
-			<input type="text" name="username" placeholder="What is your name?" >
+		Name :: <input type="text" name="name" placeholder="Enter your name please." > <br> <br>
+		Email :: <input type="text" name="email" placeholder="Enter your email please." > <br> <br>
+		Password :: <input type="text" name="password" placeholder="Enter your password please." > <br> <br>
 			<input type="hidden" name="csrf" value="<?php echo $csrf ?>">
-			<input type="submit" name="submit" value="SUBMIT">
+			<input type="submit" name="submit" value="SAVE">
 		</form>
 	</body>
 </html>
