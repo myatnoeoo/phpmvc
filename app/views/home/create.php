@@ -24,12 +24,13 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../public/js/home/index.js"></script>
     <title>Document</title>
 </head>
 <body>
     <h1>Create user</h1>
 
-    <form action="/home/store" method="POST">
+    <form action="/user/store" method="POST">
 		Name :: <input type="text" name="name" placeholder="Enter your name please." > <br> <br>
 		Email :: <input type="email" name="email" placeholder="Enter your email please." > <br> <br>
 		Password :: <input type="password" name="password" id="password" placeholder="Enter your password please." onKeyUp="checkPasswordStrength();"> <br> <br>
@@ -41,34 +42,4 @@
 
     <button onclick="location.href='/home/index';">Back to home</button>
 </body>
-<script>
-	$('#password, #confirm_password').on('keyup', function () {
-  if ($('#password').val() == $('#confirm_password').val()) {
-    $('#message').html('Password Matched!').css('color', 'green');
-  } else 
-    $('#message').html('Password Not Matching!!').css('color', 'red');
-});
-
-function checkPasswordStrength() {
-	var number = /([0-9])/;
-	var alphabets = /([a-zA-Z])/;
-	var special_characters = /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/;
-	
-	if($('#password').val().length<6) {
-		$('#password-strength-status').removeClass();
-		$('#password-strength-status').addClass('weak-password');
-		$('#password-strength-status').html("Weak (should be atleast 6 characters.)").css('color','red');
-	} else {  	
-	    if($('#password').val().match(number) && $('#password').val().match(alphabets) && $('#password').val().match(special_characters)) {            
-			$('#password-strength-status').removeClass();
-			$('#password-strength-status').addClass('strong-password');
-			$('#password-strength-status').html("Strong").css('color','green');
-        } else {
-			$('#password-strength-status').removeClass();
-			$('#password-strength-status').addClass('medium-password');
-			$('#password-strength-status').html("Medium (should include alphabets, numbers and special characters.)").css('color','orange');
-        } 
-	}
-}
-</script>
 </html>

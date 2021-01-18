@@ -1,0 +1,308 @@
+.right {
+    width: 79.3%;
+    float: right;
+  
+    }
+.menu{
+    padding:5px 0px 5px 5px; 
+    background-color: powderblue;
+}
+.iconbox{
+    height: 90px;
+    background-color: #E5E7E9;
+}
+.icongroup{
+    padding-left: 5px;
+    height: 45px;
+}
+#rcorners {
+    border-radius: 15px;
+    background: #E5E7E9;
+    border: 1px solid #000000;
+    width: 50px;
+    height: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial;
+    padding: 0px 8px 8px 8px;
+    margin-top: 5px;    
+}
+
+    #iconblock{
+        padding-right: 5px;
+        padding-top: 5px; 
+        float: left;
+        height: 40px;
+        background-color:#E5E7E9;
+    }
+    #iconblock p{
+        padding-top: 5px;
+    }
+
+.jobnetbox{
+    height: 300px;
+    padding-left: 5px;
+    border:thin solid;
+}
+
+.jobnetfooter{
+    background-color: powderblue; 
+    height: 50px;
+}
+
+.buttonbox{
+    float: right; 
+    margin-top:10px; 
+    margin-right: 20px; 
+}
+
+.buttonbox button{
+    width: 100px; 
+    height: 30px; 
+    background-color: white;
+}
+
+/* Zoom in out bar */
+.min_max_bar{
+    height: 20px;
+    background-color:#E5E7E9;
+   }
+   
+.PrixMin {
+    float: left;
+    color: #164188;
+    font-size: 19px;
+    /* margin-right: 5px; */
+}
+
+.selecteurPrix {
+    padding-top: 15px;
+}
+
+
+
+.valeurPrix {
+    position: absolute;
+    top: -59px;
+    left: 177px;
+}
+
+.range-slider {
+    /* position: inherit;  
+    margin: 2px;
+    height: 20px;
+    position: relative;
+    padding-right: 3px;
+    margin-left: 0;
+    margin-bottom: 2px; */
+    width: 95%;
+    float: left;
+
+}
+
+
+@media (-webkit-min-device-pixel-ratio:0) {
+    /* Non-IE styles here*/
+    .range-slider .input-range {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background: #ADD8E6;
+        outline: none;
+        border: solid;
+        border-width: 1px;
+        vertical-align: middle;
+    }
+}
+
+@media (-ms-high-contrast:none),(-ms-high-contrast:active) {
+    /* IE styles here*/
+    .range-slider .input-range {
+        /*removes default webkit styles*/
+        -webkit-appearance: none;
+        /*fix for FF unable to apply focus style bug */               
+        /*required for proper track sizing in FF*/
+        width: 100%;                
+        outline: none;  
+        position: relative;
+        margin-top: 0px;
+        vertical-align: middle;
+        padding: 0;                  
+        
+    }
+}
+
+.range-slider .input-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 4px;
+    height: 17px;            
+    background: #007BFF;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+    border: solid;
+    border-width: 1px;
+}
+
+            .range-slider .input-range::-webkit-slider-thumb:hover {
+                background: #007BFF;
+            }
+
+        .range-slider .input-range:active::-webkit-slider-thumb {
+            background: #007BFF;
+        }
+
+        .range-slider .input-range::-moz-range-thumb {
+            width: 6px;
+            height: 20px;                                     
+            background: #007BFF;
+            cursor: pointer;
+            -webkit-transition: background .15s ease-in-out;
+            transition: background .15s ease-in-out;
+            border: solid;
+            border-width: 1px;
+            border-radius: 0px;
+        }
+
+            .range-slider .input-range::-moz-range-thumb:hover {
+                background: #007BFF;
+            }
+
+        .range-slider .input-range:active::-moz-range-thumb {
+            background: #007BFF;
+            border: solid;
+            border-width: 1px;
+        }
+
+    
+::-moz-range-track {
+    background: #ADD8E6;
+    border: 0;
+}
+input::-moz-focus-inner {
+    border: 0;
+}
+
+input[type=range] {
+    margin: 2px;          
+}
+
+    input[type=range]::-ms-track {
+        width: 100%;
+        height: 3px;
+        /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+        background: transparent;
+        /*leave room for the larger thumb to overflow with a transparent border */
+        border-color: transparent;
+        border-width: 6px 0;
+        /*remove default tick marks*/
+        color: transparent;  
+    }
+
+    input[type=range]::-ms-fill-lower {
+        background: #ADD8E6;
+        border-radius: 10px;
+        border: solid;
+        border-width: 1px;
+    }
+
+    input[type=range]::-ms-fill-upper {
+        background: #ADD8E6;
+        border-radius: 10px;
+        border: solid;
+        border-width: 1px;
+    }
+
+    input[type=range]::-ms-thumb {
+        border: solid;
+        border-width: 1px;
+        height: 10px;
+        width: 2px;                
+        background: #007BFF;          
+        
+
+    }
+
+    input[type=range]::-ms-tooltip {
+         display: none;
+     }
+   
+
+    input[type=range]:focus::-ms-fill-lower {
+        background: #ADD8E6;
+    }
+
+    input[type=range]:focus::-ms-fill-upper {
+        background: #ADD8E6;
+    }
+
+.btnStyle{
+border-radius: 70%;
+}
+
+.button {
+position: relative;
+border: 5px solid #f00;
+}
+.button:before {
+content: " ";
+position: absolute;
+z-index: -1;
+top: -10px;
+left: -11px;
+right: 5px;
+bottom: 87px;
+border: 56px solid #252523;
+border-radius: 50%;
+}
+
+.cssCircle {
+-webkit-border-radius: 999px;
+-moz-border-radius: 999px;
+border-radius: 999px;
+behavior: url(PIE.htc);
+
+width: 15px;
+height: 15px;
+padding: 0px;  
+
+background: #888888;
+border: 1px solid black;  
+color: #ffffff;
+text-align: center;
+vertical-align: middle;
+-webkit-transition: background 0.2s linear;
+-moz-transition: background 0.2s linear;
+-ms-transition: background 0.2s linear;
+-o-transition: background 0.2s linear;
+transition: background 0.2s linear;
+transition: color 0.2s linear;   
+font: 15px Arial, sans-serif
+
+}
+.cssCircle:hover {
+background: #65CECD;
+cursor: pointer;
+}
+
+.minusSign {
+line-height: 0.9em;
+/* margin-bottom: 1px; */
+float: left;
+vertical-align: middle; 
+margin-top: 3px;  
+}
+
+.plusSign {
+line-height: 1.1em; 
+float: left;
+vertical-align: middle;
+text-align: center;
+margin-top: 3px;  
+}
+
+.minusSign:hover,
+.plusSign:hover {
+color: white;
+}

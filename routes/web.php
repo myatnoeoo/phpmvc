@@ -4,18 +4,16 @@
 require_once './vendor/autoload.php';
 
 $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/home/index', 'homeController::index');
-    $r->addRoute('GET', '/home/view/{id}', 'homeController::view');
-    $r->addRoute('GET', '/home/edit/{id}', 'homeController::edit');
-    $r->addRoute('POST', '/home/update/{id}', 'homeController::update');
-    $r->addRoute('GET', '/home/create', 'homeController::create');
-    $r->addRoute('POST', '/home/store', 'homeController::store');
-    $r->addRoute('GET', '/home/delete/{id}', 'homeController::delete');
+    $r->addRoute('GET', '/user/index', 'homeController::index');
+    $r->addRoute('GET', '/user/view/{id}', 'homeController::view');
+    $r->addRoute('GET', '/user/edit/{id}', 'homeController::edit');
+    $r->addRoute('POST', '/user/update/{id}', 'homeController::update');
+    $r->addRoute('GET', '/user/create', 'homeController::create');
+    $r->addRoute('POST', '/user/store', 'homeController::store');
+    $r->addRoute('GET', '/user/delete/{id}', 'homeController::delete');
 
-    $r->addRoute('GET', '/test', 'testController::index');
-    $r->addRoute('GET', '/welcome', 'welcomeController::index');
-    $r->addRoute('GET', '/csrf', 'csrfController::index');
-    $r->addRoute('POST', '/csrf/test', 'csrfController::store');
+    $r->addRoute('GET', '/login', 'loginController::index');
+    $r->addRoute('GET', '/object/list', 'objectController::index');
 });
 
 // Fetch method and URI from somewhere

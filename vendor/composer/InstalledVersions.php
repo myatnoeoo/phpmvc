@@ -54,8 +54,8 @@ private static $installed = array (
     ),
     'illuminate/container' => 
     array (
-      'pretty_version' => 'v7.30.1',
-      'version' => '7.30.1.0',
+      'pretty_version' => 'v7.30.2',
+      'version' => '7.30.2.0',
       'aliases' => 
       array (
       ),
@@ -63,8 +63,8 @@ private static $installed = array (
     ),
     'illuminate/contracts' => 
     array (
-      'pretty_version' => 'v7.30.1',
-      'version' => '7.30.1.0',
+      'pretty_version' => 'v7.30.2',
+      'version' => '7.30.2.0',
       'aliases' => 
       array (
       ),
@@ -72,8 +72,8 @@ private static $installed = array (
     ),
     'illuminate/database' => 
     array (
-      'pretty_version' => 'v7.30.1',
-      'version' => '7.30.1.0',
+      'pretty_version' => 'v7.30.2',
+      'version' => '7.30.2.0',
       'aliases' => 
       array (
       ),
@@ -81,8 +81,8 @@ private static $installed = array (
     ),
     'illuminate/filesystem' => 
     array (
-      'pretty_version' => 'v7.30.1',
-      'version' => '7.30.1.0',
+      'pretty_version' => 'v7.30.2',
+      'version' => '7.30.2.0',
       'aliases' => 
       array (
       ),
@@ -90,8 +90,8 @@ private static $installed = array (
     ),
     'illuminate/http' => 
     array (
-      'pretty_version' => 'v7.30.1',
-      'version' => '7.30.1.0',
+      'pretty_version' => 'v7.30.2',
+      'version' => '7.30.2.0',
       'aliases' => 
       array (
       ),
@@ -99,8 +99,8 @@ private static $installed = array (
     ),
     'illuminate/session' => 
     array (
-      'pretty_version' => 'v7.30.1',
-      'version' => '7.30.1.0',
+      'pretty_version' => 'v7.30.2',
+      'version' => '7.30.2.0',
       'aliases' => 
       array (
       ),
@@ -108,8 +108,8 @@ private static $installed = array (
     ),
     'illuminate/support' => 
     array (
-      'pretty_version' => 'v7.30.1',
-      'version' => '7.30.1.0',
+      'pretty_version' => 'v7.30.2',
+      'version' => '7.30.2.0',
       'aliases' => 
       array (
       ),

@@ -1,0 +1,13 @@
+
+.chkBox{
+  margin-left: -20px;
+  transform: scale(1.5);
+  margin-right: 10px;   
+  vertical-align: middle;  
+}
+.rightBox{
+  
+  border: thin solid;
+  float: right;
+}
+

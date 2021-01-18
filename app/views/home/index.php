@@ -22,7 +22,7 @@ tr:nth-child(even) {
 <body>
 
 <h2>User Table</h2>
-<button onclick="location.href='/home/create';" >Create User</button> <br><br>
+<button onclick="location.href='/user/create';" >Create User</button> <br><br>
 <table>
   <tr>
     <th>Name</th>
