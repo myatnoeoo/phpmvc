@@ -18,7 +18,7 @@
 </style>
 </head>
 <body>
-<form>
+<form method="POST" action="/login">
 <div style="margin-top: 15%; margin-left: 35%">
     <p>Welcome to a job manager.</p>
     <p>To log in to the job controller, press the login button the controller <br>
@@ -37,15 +37,15 @@
             </tr>
             <tr class="spaceUnder">
                 <td><label>user:</label></td>
-                <td><input type="text" id="user" size="28" style="border-radius:3px; border-color: #C6C8C0; border-width: thin;"></td>
+                <td><input type="text" id="user" size="28" name="username" style="border-radius:3px; border-color: #C6C8C0; border-width: thin;"></td>
             </tr>
             <tr class="spaceUnder">
                 <td><label>password:</label></td>
-                <td><input type="password" id="password" size="29" style="border-radius:3px; border-color: #C6C8C0; border-width: thin;"></td>
+                <td><input type="password" id="password" size="29" name="password" style="border-radius:3px; border-color: #C6C8C0; border-width: thin;"></td>
             </tr>
         </table> 
     <div style="padding-top: 5%; padding-left: 35%">
-        <input type="button" class="btn" onclick="window.location.href = '/object/list'" value="Login"/>
+        <input type="submit" class="btn" value="Login"/>
         <input type="reset"  class="btn" value="Cancel"/>
     </div>
 </div>

@@ -13,6 +13,7 @@ $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/user/delete/{id}', 'homeController::delete');
 
     $r->addRoute('GET', '/login', 'loginController::index');
+    $r->addRoute('POST', '/login', 'loginController::login');
     $r->addRoute('GET', '/object/list', 'objectController::index');
 });
 
